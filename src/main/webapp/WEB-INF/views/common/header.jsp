@@ -37,11 +37,11 @@
         </a>
 		<div>
 			<c:if test="${sessionMid == null}">
-				<a href="${pageContect.request.contextPath}" class="btn btn-success btn-sm">로그인</a>
+				<a href="${pageContect.request.contextPath}/webapp/ch08/login" class="btn btn-success btn-sm">로그인</a>
 			</c:if>
 			<c:if test="${sessionMid != null}">
 				<b class="text-white mr-2">User ID: ${sessionMid}</b>
-				<a href="${pageContect.request.contextPath}" class="btn btn-success btn-sm">로그아웃</a>
+				<a href="${pageContect.request.contextPath}/webapp/ch08/logout" class="btn btn-success btn-sm">로그아웃</a>
 			</c:if>
 		</div>
       </nav>
